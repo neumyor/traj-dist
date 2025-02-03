@@ -4,6 +4,9 @@
 **trajectory_distance** is a Python module for computing distances between 2D-trajectory objects.
 It is implemented in Cython.
 
+> 🎉 **This version has fixed some installation issues.** Since the original author is no longer maintaining it, everyone is welcome to submit issues in this repository and discuss together. 🤝
+
+
 ## Description
 
 9 distances between trajectories are available in the **trajectory_distance**  package.
