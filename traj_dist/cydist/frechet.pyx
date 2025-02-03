@@ -7,7 +7,7 @@ import numpy as np
 from cpython cimport bool
 
 
-from basic_euclidean import c_circle_line_intersection,c_point_to_seg,c_eucl_dist
+from .basic_euclidean import c_circle_line_intersection,c_point_to_seg,c_eucl_dist
 
 
 cdef np.ndarray[np.float64_t,ndim=1] _free_line(double px, double py, double eps, double s1x, double s1y, double
@@ -532,7 +532,7 @@ def c_frechet(np.ndarray[np.float64_t,ndim=2] P,np.ndarray[np.float64_t,ndim=2] 
     cc=_compute_critical_values(P,Q,p,q)
     eps=cc[0]
     while(len(cc)!=1):
-        m_i=len(cc)/2-1
+        m_i=len(cc)//2-1
         eps = cc[m_i]
         rep = _decision_problem(P,Q,p,q,eps)
         if rep:

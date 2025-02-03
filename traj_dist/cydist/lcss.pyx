@@ -8,7 +8,7 @@ cimport numpy as np
 import numpy as np
 
 
-from basic_euclidean import c_eucl_dist
+from .basic_euclidean import c_eucl_dist
 from basic_geographical import c_great_circle_distance
 
 def c_e_lcss(np.ndarray[np.float64_t,ndim=2] t0, np.ndarray[np.float64_t,ndim=2] t1, eps):

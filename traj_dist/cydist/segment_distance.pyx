@@ -6,7 +6,7 @@ from libc.math cimport fmin
 from libc.math cimport fmax
 from libc.math cimport sqrt
 
-from basic_euclidean import c_eucl_dist
+from .basic_euclidean import c_eucl_dist
 cimport numpy as np
 import numpy as np
 

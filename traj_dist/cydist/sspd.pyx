@@ -5,7 +5,7 @@ STUFF = "Hi"
 
 from libc.math cimport fmin
 
-from basic_euclidean import c_point_to_trajectory
+from .basic_euclidean import c_point_to_trajectory
 from basic_geographical import c_point_to_path
 cimport numpy as np
 from numpy.math cimport INFINITY

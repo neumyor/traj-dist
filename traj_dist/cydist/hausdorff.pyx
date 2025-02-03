@@ -5,7 +5,7 @@ from libc.math cimport fmin
 
 cimport numpy as np
 
-from basic_euclidean import c_point_to_trajectory
+from .basic_euclidean import c_point_to_trajectory
 from basic_geographical import c_point_to_path
 
 #############
